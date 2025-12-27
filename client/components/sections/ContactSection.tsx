@@ -223,7 +223,7 @@ export default function ContactSection() {
               </button>
 
               {submitted && (
-                <div className="p-4 bg-emerald-accent/10 border border-emerald-accent rounded-lg text-emerald-accent text-sm">
+                <div className="p-4 bg-green-500/10 border border-green-500/50 rounded-lg text-green-400 text-sm">
                   Thank you! Your message has been sent. I'll get back to you soon.
                 </div>
               )}
