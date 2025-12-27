@@ -89,35 +89,6 @@ export default function SkillsSection() {
 
   useEffect(() => {
     animateOnScroll("[data-animate='fade-in']", { stagger: 0.05 });
-
-    // Animate skill bars on scroll
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const bars = containerRef.current?.querySelectorAll(
-              "[data-width]",
-            ) as NodeListOf<HTMLElement>;
-            bars?.forEach((bar) => {
-              const width = bar.getAttribute("data-width");
-              if (width) {
-                bar.style.width = width;
-              }
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 },
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => {
-      observer.disconnect();
-    };
   }, []);
 
   return (
