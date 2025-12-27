@@ -9,7 +9,7 @@ export const animateOnScroll = (
     duration?: number;
     delay?: number;
     stagger?: number | { amount: number; from: string };
-  } = {}
+  } = {},
 ) => {
   const { duration = 0.6, delay = 0, stagger = 0 } = options;
 
@@ -31,7 +31,7 @@ export const animateOnScroll = (
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
-      }
+      },
     );
   });
 };
@@ -49,7 +49,7 @@ export const heroTextReveal = (selector: string) => {
       duration: 1,
       delay: 0.2,
       ease: "power2.out",
-    }
+    },
   );
 };
 
@@ -59,7 +59,7 @@ export const staggeredFadeIn = (
     duration?: number;
     delay?: number;
     stagger?: number;
-  } = {}
+  } = {},
 ) => {
   const { duration = 0.5, delay = 0, stagger = 0.1 } = options;
 
@@ -76,7 +76,7 @@ export const staggeredFadeIn = (
       delay,
       stagger,
       ease: "power2.out",
-    }
+    },
   );
 };
 
@@ -97,7 +97,7 @@ export const scaleOnScroll = (selector: string) => {
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
-      }
+      },
     );
   });
 };
@@ -119,7 +119,7 @@ export const slideInFromLeft = (selector: string) => {
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
-      }
+      },
     );
   });
 };
@@ -141,7 +141,7 @@ export const slideInFromRight = (selector: string) => {
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
-      }
+      },
     );
   });
 };
@@ -157,7 +157,11 @@ export const parallaxScroll = (selector: string, distance: number = -100) => {
   });
 };
 
-export const countUp = (selector: string, end: number, duration: number = 2) => {
+export const countUp = (
+  selector: string,
+  end: number,
+  duration: number = 2,
+) => {
   const obj = { value: 0 };
   gsap.to(obj, {
     value: end,

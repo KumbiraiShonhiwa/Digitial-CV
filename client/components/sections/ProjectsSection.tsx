@@ -176,7 +176,11 @@ export default function ProjectsSection() {
   }, [activeCategory]);
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-card" ref={containerRef}>
+    <section
+      id="projects"
+      className="py-20 md:py-32 bg-card"
+      ref={containerRef}
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div data-animate="fade-in" className="mb-16 max-w-5xl">
@@ -185,8 +189,8 @@ export default function ProjectsSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mb-6"></div>
           <p className="text-lg text-foreground/70">
-            A selection of projects showcasing my expertise in full-stack development, cybersecurity,
-            and software engineering.
+            A selection of projects showcasing my expertise in full-stack
+            development, cybersecurity, and software engineering.
           </p>
         </div>
 
@@ -225,7 +229,8 @@ export default function ProjectsSection() {
         {/* CTA */}
         <div data-animate="fade-in" className="text-center">
           <p className="text-foreground/70 mb-4">
-            Want to see more? Check out my GitHub for additional projects and contributions.
+            Want to see more? Check out my GitHub for additional projects and
+            contributions.
           </p>
           <a
             href="https://github.com/kumbirai"

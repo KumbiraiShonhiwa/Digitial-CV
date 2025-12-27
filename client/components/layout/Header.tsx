@@ -8,8 +8,16 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "experience", "projects", "education", "contact"];
-      
+      const sections = [
+        "home",
+        "about",
+        "skills",
+        "experience",
+        "projects",
+        "education",
+        "contact",
+      ];
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -71,7 +79,9 @@ export default function Header() {
                 {item.label}
                 <span
                   className={`absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 ${
-                    activeSection === item.id ? "w-full" : "w-0 group-hover:w-full"
+                    activeSection === item.id
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
                   }`}
                 />
               </button>

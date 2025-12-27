@@ -99,7 +99,7 @@ export default function SkillsSection() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const bars = containerRef.current?.querySelectorAll(
-              "[data-width]"
+              "[data-width]",
             ) as NodeListOf<HTMLElement>;
             bars?.forEach((bar) => {
               const width = bar.getAttribute("data-width");
@@ -111,7 +111,7 @@ export default function SkillsSection() {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (containerRef.current) {
@@ -133,8 +133,9 @@ export default function SkillsSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mb-6"></div>
           <p className="text-lg text-foreground/70">
-            A comprehensive overview of my technical expertise and professional capabilities,
-            built through hands-on experience and continuous learning.
+            A comprehensive overview of my technical expertise and professional
+            capabilities, built through hands-on experience and continuous
+            learning.
           </p>
         </div>
 
@@ -166,7 +167,9 @@ export default function SkillsSection() {
         <div data-animate="fade-in" className="mt-16 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 bg-background rounded-lg border border-border">
-              <h4 className="font-space-grotesk font-bold text-lg mb-3">Languages</h4>
+              <h4 className="font-space-grotesk font-bold text-lg mb-3">
+                Languages
+              </h4>
               <div className="space-y-2">
                 <p className="text-foreground/80">
                   <span className="font-semibold">English</span> - Fluent
@@ -184,7 +187,9 @@ export default function SkillsSection() {
             </div>
 
             <div className="p-6 bg-background rounded-lg border border-border">
-              <h4 className="font-space-grotesk font-bold text-lg mb-3">Certifications</h4>
+              <h4 className="font-space-grotesk font-bold text-lg mb-3">
+                Certifications
+              </h4>
               <div className="space-y-2 text-foreground/80">
                 <p>SOC Analyst Learning Path</p>
                 <p>Information Responder Path</p>
@@ -192,7 +197,9 @@ export default function SkillsSection() {
             </div>
 
             <div className="p-6 bg-background rounded-lg border border-border">
-              <h4 className="font-space-grotesk font-bold text-lg mb-3">Methodologies</h4>
+              <h4 className="font-space-grotesk font-bold text-lg mb-3">
+                Methodologies
+              </h4>
               <div className="space-y-2 text-foreground/80">
                 <p>Agile & Scrum</p>
                 <p>Security Frameworks</p>

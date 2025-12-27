@@ -26,7 +26,7 @@ export default function HeroSection() {
           duration: 0.8,
           ease: "power2.out",
         },
-        0
+        0,
       );
 
       // Animate description
@@ -42,7 +42,7 @@ export default function HeroSection() {
           duration: 0.8,
           ease: "power2.out",
         },
-        0.2
+        0.2,
       );
 
       // Animate CTA buttons
@@ -59,7 +59,7 @@ export default function HeroSection() {
           stagger: 0.1,
           ease: "power2.out",
         },
-        0.4
+        0.4,
       );
 
       // Animate social links
@@ -76,7 +76,7 @@ export default function HeroSection() {
           stagger: 0.05,
           ease: "back.out",
         },
-        0.6
+        0.6,
       );
 
       // Floating animation for scroll indicator
@@ -127,9 +127,10 @@ export default function HeroSection() {
         {/* Description */}
         <div ref={descRef} className="max-w-2xl mx-auto mb-8">
           <p className="text-lg text-foreground/70 leading-relaxed">
-            Final-year Computer Systems Engineering student with expertise in IT audit, cyber risk
-            management, and full-stack development. Passionate about building secure, scalable systems
-            and mentoring future engineers.
+            Final-year Computer Systems Engineering student with expertise in IT
+            audit, cyber risk management, and full-stack development. Passionate
+            about building secure, scalable systems and mentoring future
+            engineers.
           </p>
         </div>
 

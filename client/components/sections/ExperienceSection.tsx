@@ -115,7 +115,11 @@ export default function ExperienceSection() {
   }, []);
 
   return (
-    <section id="experience" className="py-20 md:py-32 bg-background" ref={containerRef}>
+    <section
+      id="experience"
+      className="py-20 md:py-32 bg-background"
+      ref={containerRef}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl">
           {/* Section Header */}
@@ -125,8 +129,8 @@ export default function ExperienceSection() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mb-6"></div>
             <p className="text-lg text-foreground/70">
-              A journey through education, mentorship, and professional growth in software engineering
-              and cybersecurity.
+              A journey through education, mentorship, and professional growth
+              in software engineering and cybersecurity.
             </p>
           </div>
 

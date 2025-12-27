@@ -17,7 +17,7 @@ export default function ContactSection() {
   }, []);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -28,15 +28,15 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     // Create mailto link
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
     );
-    
+
     window.location.href = `mailto:kumbishonhiwa@icloud.com?subject=${subject}&body=${body}`;
-    
+
     // Show success message
     setSubmitted(true);
     setTimeout(() => {
@@ -70,21 +70,28 @@ export default function ContactSection() {
     <section id="contact" className="py-20 md:py-32 bg-card" ref={containerRef}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div data-animate="fade-in" className="mb-16 text-center max-w-3xl mx-auto">
+        <div
+          data-animate="fade-in"
+          className="mb-16 text-center max-w-3xl mx-auto"
+        >
           <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-4">
             Let's Connect
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mb-6 mx-auto"></div>
           <p className="text-lg text-foreground/70">
-            I'm always interested in hearing about new opportunities, collaborations, or just having
-            a chat about tech and cybersecurity. Feel free to reach out!
+            I'm always interested in hearing about new opportunities,
+            collaborations, or just having a chat about tech and cybersecurity.
+            Feel free to reach out!
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-6">
-            <h3 data-animate="fade-in" className="text-2xl font-space-grotesk font-bold mb-8">
+            <h3
+              data-animate="fade-in"
+              className="text-2xl font-space-grotesk font-bold mb-8"
+            >
               Get in Touch
             </h3>
 
@@ -102,7 +109,9 @@ export default function ContactSection() {
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-space-grotesk font-bold mb-1">{info.label}</h4>
+                    <h4 className="font-space-grotesk font-bold mb-1">
+                      {info.label}
+                    </h4>
                     <p className="text-foreground/70 group-hover:text-foreground transition-colors">
                       {info.value}
                     </p>
@@ -151,7 +160,10 @@ export default function ContactSection() {
               className="p-8 bg-background rounded-lg border border-border space-y-4"
             >
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -167,7 +179,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -183,7 +198,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -199,7 +217,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -224,7 +245,8 @@ export default function ContactSection() {
 
               {submitted && (
                 <div className="p-4 bg-green-500/10 border border-green-500/50 rounded-lg text-green-400 text-sm">
-                  Thank you! Your message has been sent. I'll get back to you soon.
+                  Thank you! Your message has been sent. I'll get back to you
+                  soon.
                 </div>
               )}
             </form>

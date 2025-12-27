@@ -9,7 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Column */}
           <div>
-            <h3 className="text-lg font-space-grotesk font-bold mb-4">Kumbirai Shonhiwa</h3>
+            <h3 className="text-lg font-space-grotesk font-bold mb-4">
+              Kumbirai Shonhiwa
+            </h3>
             <p className="text-foreground/70 text-sm mb-4">
               Computer Systems Engineering Student | Cyber & Software Engineer
             </p>
@@ -44,7 +46,9 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-lg font-space-grotesk font-bold mb-4">Contact</h3>
+            <h3 className="text-lg font-space-grotesk font-bold mb-4">
+              Contact
+            </h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3 text-foreground/70 hover:text-foreground transition-colors">
                 <Phone size={16} />
@@ -52,7 +56,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-foreground/70 hover:text-foreground transition-colors">
                 <Mail size={16} />
-                <a href="mailto:kumbishonhiwa@icloud.com">kumbishonhiwa@icloud.com</a>
+                <a href="mailto:kumbishonhiwa@icloud.com">
+                  kumbishonhiwa@icloud.com
+                </a>
               </div>
               <div className="flex items-center gap-3 text-foreground/70 hover:text-foreground transition-colors">
                 <MapPin size={16} />
@@ -63,25 +69,40 @@ export default function Footer() {
 
           {/* Links Column */}
           <div>
-            <h3 className="text-lg font-space-grotesk font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-space-grotesk font-bold mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>
-                <a href="#projects" className="hover:text-foreground transition-colors">
+                <a
+                  href="#projects"
+                  className="hover:text-foreground transition-colors"
+                >
                   View Projects
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-foreground transition-colors">
+                <a
+                  href="#skills"
+                  className="hover:text-foreground transition-colors"
+                >
                   Skills & Expertise
                 </a>
               </li>
               <li>
-                <a href="#experience" className="hover:text-foreground transition-colors">
+                <a
+                  href="#experience"
+                  className="hover:text-foreground transition-colors"
+                >
                   Experience
                 </a>
               </li>
               <li>
-                <a href="/cv.pdf" download className="hover:text-foreground transition-colors">
+                <a
+                  href="/cv.pdf"
+                  download
+                  className="hover:text-foreground transition-colors"
+                >
                   Download CV
                 </a>
               </li>
@@ -92,7 +113,8 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-border py-8">
           <p className="text-center text-sm text-foreground/70">
-            © {currentYear} Kumbirai Shonhiwa. All rights reserved. Built with React, GSAP, and Tailwind CSS.
+            © {currentYear} Kumbirai Shonhiwa. All rights reserved. Built with
+            React, GSAP, and Tailwind CSS.
           </p>
         </div>
       </div>

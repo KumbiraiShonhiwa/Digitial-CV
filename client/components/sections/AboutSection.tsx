@@ -34,7 +34,7 @@ export default function AboutSection() {
 
   useEffect(() => {
     animateOnScroll("[data-animate='fade-in']", { stagger: 0.1 });
-    
+
     // Animate stats
     setTimeout(() => {
       stats.forEach((stat, index) => {
@@ -44,7 +44,11 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-background" ref={containerRef}>
+    <section
+      id="about"
+      className="py-20 md:py-32 bg-background"
+      ref={containerRef}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-5xl">
           {/* Section Header */}
@@ -59,28 +63,46 @@ export default function AboutSection() {
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             {/* Text Content */}
             <div className="space-y-6">
-              <p data-animate="fade-in" className="text-lg text-foreground/80 leading-relaxed">
-                I'm a final-year Computer Systems Engineering student at the University of Sunderland
-                with a passion for cybersecurity and software engineering. My journey has been shaped
-                by hands-on experience in IT audit, risk assessment, and building scalable applications.
+              <p
+                data-animate="fade-in"
+                className="text-lg text-foreground/80 leading-relaxed"
+              >
+                I'm a final-year Computer Systems Engineering student at the
+                University of Sunderland with a passion for cybersecurity and
+                software engineering. My journey has been shaped by hands-on
+                experience in IT audit, risk assessment, and building scalable
+                applications.
               </p>
 
-              <p data-animate="fade-in" className="text-lg text-foreground/80 leading-relaxed">
-                As an educator and mentor, I've had the privilege of guiding over 50 students through
-                their academic journey. I believe in the power of clear communication and mentorship to
-                help others grow as engineers and professionals.
+              <p
+                data-animate="fade-in"
+                className="text-lg text-foreground/80 leading-relaxed"
+              >
+                As an educator and mentor, I've had the privilege of guiding
+                over 50 students through their academic journey. I believe in
+                the power of clear communication and mentorship to help others
+                grow as engineers and professionals.
               </p>
 
-              <p data-animate="fade-in" className="text-lg text-foreground/80 leading-relaxed">
-                My technical expertise spans cybersecurity governance, secure software development,
-                full-stack web applications, and IT assurance. I'm driven by the challenge of designing
-                systems that are not just functional, but secure, scalable, and user-centered.
+              <p
+                data-animate="fade-in"
+                className="text-lg text-foreground/80 leading-relaxed"
+              >
+                My technical expertise spans cybersecurity governance, secure
+                software development, full-stack web applications, and IT
+                assurance. I'm driven by the challenge of designing systems that
+                are not just functional, but secure, scalable, and
+                user-centered.
               </p>
 
-              <p data-animate="fade-in" className="text-lg text-foreground/80 leading-relaxed">
-                Looking ahead, I'm seeking a Graduate IT Audit and Cyber Assurance Analyst role
-                starting in 2026, where I can apply my technical knowledge to protect organizations
-                from evolving security threats.
+              <p
+                data-animate="fade-in"
+                className="text-lg text-foreground/80 leading-relaxed"
+              >
+                Looking ahead, I'm seeking a Graduate IT Audit and Cyber
+                Assurance Analyst role starting in 2026, where I can apply my
+                technical knowledge to protect organizations from evolving
+                security threats.
               </p>
             </div>
 
@@ -111,15 +133,21 @@ export default function AboutSection() {
           </div>
 
           {/* Highlights */}
-          <div data-animate="fade-in" className="bg-card rounded-lg border border-border p-8">
-            <h3 className="text-2xl font-space-grotesk font-bold mb-6">Key Strengths</h3>
+          <div
+            data-animate="fade-in"
+            className="bg-card rounded-lg border border-border p-8"
+          >
+            <h3 className="text-2xl font-space-grotesk font-bold mb-6">
+              Key Strengths
+            </h3>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">
                 <span className="text-primary text-xl mt-1">→</span>
                 <div>
                   <h4 className="font-bold mb-1">IT Audit & Compliance</h4>
                   <p className="text-foreground/70 text-sm">
-                    Control assessment, risk evaluation, and compliance documentation
+                    Control assessment, risk evaluation, and compliance
+                    documentation
                   </p>
                 </div>
               </div>
@@ -128,7 +156,8 @@ export default function AboutSection() {
                 <div>
                   <h4 className="font-bold mb-1">Cybersecurity Governance</h4>
                   <p className="text-foreground/70 text-sm">
-                    Security frameworks, threat modeling, and vulnerability management
+                    Security frameworks, threat modeling, and vulnerability
+                    management
                   </p>
                 </div>
               </div>
@@ -137,7 +166,8 @@ export default function AboutSection() {
                 <div>
                   <h4 className="font-bold mb-1">Full-Stack Development</h4>
                   <p className="text-foreground/70 text-sm">
-                    Modern web applications, APIs, databases, and responsive design
+                    Modern web applications, APIs, databases, and responsive
+                    design
                   </p>
                 </div>
               </div>
