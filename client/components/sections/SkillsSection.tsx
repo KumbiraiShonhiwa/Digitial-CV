@@ -179,12 +179,19 @@ export default function SkillsSection() {
       </div>
 
       <style>{`
+        .skill-bar-fill {
+          animation: fillBar 1.2s ease-out forwards;
+          animation-delay: 0.2s;
+        }
+
         @keyframes fillBar {
           from {
             width: 0;
+            opacity: 0;
           }
           to {
-            width: var(--bar-width, 0%);
+            width: 100%;
+            opacity: 1;
           }
         }
       `}</style>
