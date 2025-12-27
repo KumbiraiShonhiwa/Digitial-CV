@@ -1,10 +1,3 @@
-# 📄 Digital CV – Kumbirai Shonhiwa
-
-**Digital version of my CV built with Builder.io and modern web tooling.**
-This repository contains a live-deployable digital CV that presents my professional profile, skills, experience, education, and contact information. It is designed to be hosted easily (e.g., via GitHub Pages or cloud hosting).
-
----
-
 ## 🚀 About
 
 This project serves as my **digital curriculum vitae** — an interactive, web-ready version of my professional resume. It showcases my background as a computer systems engineering student and cyber/software engineer with experience in:
@@ -14,7 +7,7 @@ This project serves as my **digital curriculum vitae** — an interactive, web-r
 * Teaching and mentoring
 * Software projects and technical artifacts
 
-Being a **digital CV** makes it easier to share my profile with employers, recruiters, and collaborators from anywhere. ([GitHub Docs][1])
+Being a **digital CV** makes it easier to share my profile with employers, recruiters, and collaborators from anywhere.
 
 ---
 
@@ -103,7 +96,6 @@ To publish on GitHub Pages:
 🔗 **LinkedIn:** [https://linkedin.com/in/kumbiraishonhiwa](https://linkedin.com/in/kumbiraishonhiwa)
 📁 **Portfolio:** (link when added)
 
-*(Update contact details above as appropriate.)*
 
 ---
 
