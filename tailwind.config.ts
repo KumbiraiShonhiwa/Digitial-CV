@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        cyber: {
+          blue: "#1677ff",
+        },
+        emerald: {
+          accent: "#10b981",
+        },
+        purple: {
+          accent: "#a78bfa",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +89,48 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
+        "slide-up": {
+          from: {
+            transform: "translateY(20px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+        "glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px rgba(22, 119, 255, 0.3)",
+          },
+          "50%": {
+            boxShadow: "0 0 30px rgba(22, 119, 255, 0.6)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
+        "slide-up": "slide-up 0.5s ease-out",
+        "glow": "glow 2s ease-in-out infinite",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        "space-grotesk": ["Space Grotesk", "sans-serif"],
+        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
