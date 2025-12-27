@@ -74,13 +74,10 @@ function SkillBar({ name, level }: SkillBar) {
       </div>
       <div className="h-2 bg-muted rounded-full overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full transition-all duration-1000 ease-out"
+          className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full skill-bar-fill"
           style={{
-            width: 0,
-            animation: `fillBar ${1 + Math.random() * 0.5}s ease-out forwards`,
-            animationDelay: "0.2s",
+            width: `${level}%`,
           }}
-          data-width={`${level}%`}
         />
       </div>
     </div>
