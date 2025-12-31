@@ -49,8 +49,8 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+44 7552 994437",
-      href: "tel:+447552994437",
+      value: "+44 7552 449937",
+      href: "tel:+447552449937",
     },
     {
       icon: Mail,
@@ -125,7 +125,7 @@ export default function ContactSection() {
               <h4 className="font-space-grotesk font-bold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/kumbirai"
+                  href="https://github.com/KumbiraiShonhiwa/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 bg-background rounded-lg border border-border hover:border-primary/50 hover:bg-primary/10 transition-all text-foreground/70 hover:text-primary"
@@ -134,7 +134,7 @@ export default function ContactSection() {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/kumbirai"
+                  href="https://www.linkedin.com/in/kumbirai-shonhiwa-9052462b7/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 bg-background rounded-lg border border-border hover:border-primary/50 hover:bg-primary/10 transition-all text-foreground/70 hover:text-primary"

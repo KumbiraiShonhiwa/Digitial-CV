@@ -9,60 +9,71 @@ const projectsData = [
     category: "Full Stack",
     description:
       "A responsive full-stack web application for managing music society events, members, and resources.",
-    tags: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+    tags: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "GSAP"],
     github: "https://github.com/kumbirai",
-    live: "https://resonance-music.example.com",
+    live: "https://resonance-music-society.vercel.app/",
     featured: true,
   },
   {
     id: 2,
-    title: "Security Audit System",
-    category: "Cybersecurity",
+    title: "Sunderland Sustainable Travel Hub",
+    category: "Full Stack",
     description:
-      "An IT audit and compliance management system for tracking security assessments and control evaluations.",
-    tags: ["Python", "Django", "PostgreSQL", "RBAC"],
-    github: "https://github.com/kumbirai",
+      "A Python-based music playlist manager that allows users to create, organize, and manage playlists efficiently. The application supports song and user management, playlist editing, and basic persistence using file storage, with an optional web interface for interactive use.",
+    tags: ["Sharepoint Online", "React Framework", "Node.js", "Tailwind CSS"],
+    github:
+      "https://github.com/KumbiraiShonhiwa/Sunderland-Sustainable-Travel-Hub",
     featured: true,
   },
   {
     id: 3,
-    title: "Data Structures & Algorithms Tutor",
+    title: "Music Playlist Manager",
     category: "Academic",
     description:
-      "Interactive learning platform for teaching data structures, algorithms, and Java programming concepts.",
-    tags: ["Java", "React", "Educational Tech"],
-    github: "https://github.com/kumbirai",
+      "Music Playlist Manager is a Python-based application that allows users to create, manage, and organize music playlists, with support for song, user, and playlist management using file-based persistence and an optional web interface.",
+    tags: ["Python", "Flask", "MySQL", "Educational Tech"],
+    github: "https://github.com/KumbiraiShonhiwa/Music_Playlist_Manager",
     featured: false,
   },
   {
     id: 4,
-    title: "Network Security Analysis Tool",
-    category: "Cybersecurity",
+    title: "Tactical Insights & Scouting for Value (6-Team Focus)",
+    category: "AI & Data Science",
     description:
-      "Advanced tool for network packet analysis, threat detection, and vulnerability scanning.",
+      "The purpose of this project is to develop a scouting and tactical fit analysis platform that leverages publicly available football data (e.g., FBref, WhoScored, Transfermarkt). The system focuses on identifying players who are not only statistically strong but also tactically aligned with the playing styles of six selected Premier League teams",
     tags: ["Python", "C++", "Network Security", "Machine Learning"],
-    github: "https://github.com/kumbirai",
+    github: "https://github.com/KumbiraiShonhiwa/Tactical-Scouting",
     featured: true,
   },
   {
     id: 5,
-    title: "Cloud Infrastructure Monitor",
-    category: "Full Stack",
+    title: "AI-Phishing-Email-Detection-System",
+    category: "Cybersecurity",
     description:
-      "Real-time monitoring dashboard for cloud infrastructure health, performance, and security metrics.",
+      "Phishing detection utilising Artificial Intelligence (AI) involves the use of Machine Learning (ML) and Deep Learning (DL) algorithms to automatically identify and categorise fraudulent emails.",
     tags: ["React", "Node.js", "AWS", "WebSockets"],
     github: "https://github.com/kumbirai",
-    live: "https://cloud-monitor.example.com",
     featured: false,
   },
   {
     id: 6,
-    title: "Secure File Encryption Suite",
-    category: "Cybersecurity",
+    title:
+      "Neural Language Models with Subword Embedding Techniques for Stylistic and Authorship Classification",
+    category: "Natural Processing Language",
     description:
-      "End-to-end encryption application with cryptographic security standards for sensitive data.",
+      "This project explores the use of neural language models combined with subword embedding techniques to improve stylistic classification and authorship attribution. By leveraging state-of-the-art transformer models and advanced tokenization strategies.",
     tags: ["Rust", "Cryptography", "Security"],
     github: "https://github.com/kumbirai",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "WorkWise-Central",
+    category: "Service Management",
+    description:
+      "WorkWise Central is a service-management tool designed for service-based industries. It is engineered to streamline operations, maximize resource efficiency, and elevate customer experiences.",
+    github: "https://github.com/COS301-SE-2024/WorkWise-Central",
+    tags: ["Vue", "TypeScript", "JavaScript", "Node.js", "MongoDB", "OAuth"],
     featured: false,
   },
 ];
@@ -71,7 +82,10 @@ const categories = [
   { id: "all", label: "All Projects" },
   { id: "Full Stack", label: "Full Stack" },
   { id: "Cybersecurity", label: "Cybersecurity" },
+  { id: "AI & Data Science", label: "AI & Data Science" },
+  { id: "Natural Processing Language", label: "Natural Processing Language" },
   { id: "Academic", label: "Academic" },
+  {id: "Service Management", label:"Service Management"}
 ];
 
 interface ProjectCard {
@@ -233,7 +247,7 @@ export default function ProjectsSection() {
             contributions.
           </p>
           <a
-            href="https://github.com/kumbirai"
+            href="https://github.com/KumbiraiShonhiwa/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium"

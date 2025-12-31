@@ -146,7 +146,7 @@ export default function HeroSection() {
             View My Work
           </button>
           <a
-            href="/cv.pdf"
+            href="/Kumbirai Shonhiwa - Computer Systems Engineer Student - CV (2).pdf"
             download
             className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-medium text-lg hover:bg-primary/10 transition-colors active:scale-95"
           >

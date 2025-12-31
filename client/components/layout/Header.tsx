@@ -90,7 +90,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <a
-            href="/cv.pdf"
+            href="/Kumbirai Shonhiwa - Computer Systems Engineer Student - CV (2).pdf"
             download
             className="hidden md:inline-block px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium text-sm"
           >
